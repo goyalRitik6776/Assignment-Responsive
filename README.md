@@ -1,7 +1,7 @@
 
-  # Assignment - Responsive 
+  # Assignment - 3 (Responsive) 
 
-  Deployed Link --> 
+  Deployed Link --> https://cogo-assignment-responsive.vercel.app/
 
 
   To preview and run the project on your device:

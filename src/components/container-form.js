@@ -3,6 +3,8 @@ import CountryCard from "../components/country-card";
 
 const ContainerForm = () => {
   const [toggle,setToggle] = useState(true);
+  const [description,setDescription] = useState("I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy,  and Webflow development.");
+  
   return (
     <div className=" flex flex-col items-start justify-start text-left text-base text-gray-7001 font-text-sm-medium1 py-0 px-4 gap-[20px] self-stretch lg:flex-row">
             {/* Heading  */}
@@ -43,7 +45,7 @@ const ContainerForm = () => {
                       <div className="rounded-tl-lg rounded-tr-none rounded-br-none rounded-bl-lg flex flex-row py-2.5 pr-3 pl-3.5 items-center justify-start">
                         <div className="relative leading-[24px]">untitledui.com/</div>
                       </div>
-                      <input className="self-stretch rounded-tl-none rounded-tr-lg rounded-br-lg rounded-bl-none w-full bg-white py-2.5 px-3.5 gap-[8px] text-gray-900 border-[1px] border-solid border-gray-300 leading-[24px] font-medium font-text-sm-medium1 text-[15px] focus:outline-none" type="text" defaultValue="Olivia" placeholder="Username"/>
+                      <input className="self-stretch rounded-tl-none rounded-tr-lg rounded-br-lg rounded-bl-none w-full bg-white py-2.5 px-3.5 gap-[8px] text-gray-900 leading-[24px] font-medium font-text-sm-medium1 text-[15px] focus:outline-none border-[1px] border-solid border-gray-300 border-t-0 border-b-0 border-r-0" type="text" defaultValue="Olivia" placeholder="Username"/>
                     </div>
                   </div>
                   {/* WEBSITE  */}
@@ -55,30 +57,28 @@ const ContainerForm = () => {
                       <div className="rounded-tl-lg rounded-tr-none rounded-br-none rounded-bl-lg flex flex-row py-2.5 pr-3 pl-3.5 items-center justify-start">
                         <div className="relative leading-[24px]">http://</div>
                       </div>
-                      <input className="self-stretch rounded-tl-none rounded-tr-lg rounded-br-lg rounded-bl-none w-full bg-white py-2.5 px-3.5 gap-[8px] text-gray-900 border-[1px] border-solid border-gray-300 leading-[24px] font-medium font-text-sm-medium1 text-[15px] focus:outline-none" type="text" defaultValue="www.untitledui.com" placeholder="Website"/>
+                      <input className="self-stretch rounded-tl-none rounded-tr-lg rounded-br-lg rounded-bl-none w-full bg-white py-2.5 px-3.5 gap-[8px] text-gray-900 border-[1px] border-solid border-gray-300 border-t-0 border-b-0 border-r-0 leading-[24px] font-medium font-text-sm-medium1 text-[15px] focus:outline-none" type="text" defaultValue="www.untitledui.com" placeholder="Website"/>
                     </div>
                 </div>
                 {/* DESCRIPTION  */}
                 <div className="self-stretch flex flex-col items-start justify-start gap-[12px] ">
                   {/* Description Container  */}
                   <div className="self-stretch h-[180px] shrink-0 flex flex-col items-start justify-start gap-[6px] ">
+
                     <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-[6px]">
                       <div className="relative leading-[20px] font-medium">
                         Description
                       </div>
-                      <div className="self-stretch flex-1 rounded-lg bg-base-white1 shadow-[0px_1px_2px_rgba(16,_24,_40,_0.05)] overflow-hidden flex flex-row py-3 px-3.5 items-start justify-start text-lg text-gray-9001 border-[1px] border-solid border-gray-3001">
-                        <div className="self-stretch flex-1 relative leading-[24px]">
-                          <p className="[margin-block-start:0] [margin-block-end:16px]">
-                            I'm a Product Designer based in Melbourne,
-                            Australia. I specialise in UX/UI design, brand
-                            strategy, and Webflow development.
-                          </p>
-                        </div>
-                      </div>
+                      <textarea
+                       className="self-stretch h-full rounded-lg border-[1px] border-solid border-gray-300 font-text-sm-medium1 text-[#101828] leading-6 text-lg font-normal px-3.5 py-3 focus:outline-none resize-none"
+                       type="text" name="" id="" placeholder="Desciption" spellCheck="false"
+                       value={description}
+                       onChange={(e) => setDescription(e.target.value)}/>
                     </div>
+
                     {/* 275 characters left  */}
                     <div className="relative leading-[20px] text-gray-6001">
-                      275 characters left
+                      {400 - description.length} characters left
                     </div>
                   </div>
                   {/* Font style conatiner  */}

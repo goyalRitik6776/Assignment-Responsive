@@ -29,7 +29,11 @@ const PersonalInfoContainer = () => {
           {/* Email  */}
           <div className="self-stretch flex flex-col items-start justify-start gap-[6px]">
             <div className="relative leading-[20px] font-medium">Email</div>
-              <input className="self-stretch rounded-lg bg-white py-2.5 px-3.5 gap-[8px] text-gray-900 border-[1px] border-solid border-gray-300 leading-[24px] font-medium font-text-sm-medium1 text-[14px] focus:outline-none" type="email" defaultValue="olivia@untitledui.com" placeholder="Email"/>
+            <div className="self-stretch rounded-lg border-[1px] border-solid border-gray-300 flex ">
+
+              <img className="pl-3.5" src="../assets/email.svg" alt="" />
+              <input className="self-stretch rounded-lg border-none bg-white py-2.5 px-3.5 gap-[8px] text-gray-900 leading-[24px] font-medium font-text-sm-medium1 text-[14px] focus:outline-none" type="email" defaultValue="olivia@untitledui.com" placeholder="Email"/>
+            </div>
           </div>
 
           <div className="self-stretch flex flex-col items-start justify-start gap-[20px] lg:flex-row ">
