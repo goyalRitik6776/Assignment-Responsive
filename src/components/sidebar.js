@@ -9,7 +9,6 @@ const Sidebar = () => {
   }
 
   return (
-    // <div className="flex">
       <aside className="h-[100vh] sticky top-0 items-start justify-start hidden md:flex">
         {/* LEFT  */}
         <div className="h-[100vh] flex flex-col justify-between items-start w-[81px] border-[1px] border-solid border-gray-300 border-t-0 border-b-0 border-l-0" onClick={fn}>
@@ -85,10 +84,13 @@ const Sidebar = () => {
                      link="../assets/settings-1.svg"
                      text="My Details"
                     />
+                    <div className="flex items-center bg-gray-50 relative rounded-md">
                     <SettingCard 
                      link="../assets/settings-2.svg"
                      text="Profile"
                     />
+                    <div className="w-[22px] h-[22px] bg-[#F2F4F7] py-[2px] px-[8px] rounded-2xl text-center absolute right-4 font-text-sm-medium1 font-medium text-sm leading-[18px] text-[#344054] pt-1 cursor-pointer">10</div>
+                    </div>
                     <SettingCard 
                      link="../assets/settings-3.svg"
                      text="Password"

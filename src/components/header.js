@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <nav className="self-stretch bg-base-white1 box-border h-16 shrink-0 flex flex-col items-center justify-start border-b-[1px] border-solid border-gray-2001 md:hidden">
+    <nav className="self-stretch bg-white box-border h-16 shrink-0 flex flex-col items-center justify-start border-b-[1px] border-solid border-gray-200 md:hidden">
       <div className="self-stretch flex-1 flex flex-row py-3 pr-2 pl-4 items-center justify-between">
         <div className="flex flex-row items-start justify-start">
           <div className="relative w-[142px] h-8 shrink-0">

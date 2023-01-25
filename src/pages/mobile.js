@@ -1,7 +1,7 @@
 import Header from "../components/header";
 import PageHeaderContainer from "../components/page-header-container";
 import PersonalInfoContainer from "../components/personal-info-container";
-import ContainerForm from "../components/container-form";
+import ProfileContainer from "../components/profile-container";
 import Sidebar from "../components/sidebar";
 
 const Mobile = () => {
@@ -16,7 +16,7 @@ const Mobile = () => {
         <PageHeaderContainer />
         <PersonalInfoContainer />
         <div className="h-0.5 w-full bg-[#EAECF0]"></div>
-        <ContainerForm />
+        <ProfileContainer />
       </main>
     </div>
 
